@@ -2,5 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
+#request: it is object that contain all the information comming from http response
 def home(request):
-    return HttpResponse("<h1>my name is sujan lama</h1>")
+    return render(request,"home.html")
