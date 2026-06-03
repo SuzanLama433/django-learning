@@ -28,14 +28,14 @@ python manage.py runserver -->to develop a server
 
 Folder Structure 
 
-Base_Dir(Daraz)
+Base_Dir(project)
             -->app 
                 -->templates -->home.html
                 -->static 
                        -->css
                        -->js
                        -->images
-            -->daraz(project)
+            -->project(project)
             -->manage.py
             -->database   
 
