@@ -5,3 +5,6 @@ from django.http import HttpResponse
 #request: it is object that contain all the information comming from http response
 def home(request):
     return render(request,"home.html")
+
+def form(request):
+    return render(request,'form.html')

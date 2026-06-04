@@ -1,22 +1,23 @@
 <!doctype html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Link CSS File -->
-    <link rel="stylesheet" href="static/css/style.css" />
-
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <title>My Profile</title>
   </head>
   <body>
     <header>
-      <h1>Sujan Lama</h1>
-      <p>Python Developer | Django Learner | Tech Enthusiast</p>
+      <h1>Sujan <span>Lama</span></h1>
+      <p>
+        Python Developer &nbsp;·&nbsp; Django Learner &nbsp;·&nbsp; Tech
+        Enthusiast
+      </p>
     </header>
 
     <main>
-      <section class="card">
+      <section class="card" data-num="01">
         <h2>About Me</h2>
         <p>
           I am passionate about software development and enjoy building web
@@ -25,21 +26,27 @@
         </p>
       </section>
 
-      <section class="card">
+      <section class="card" data-num="02">
         <h2>Skills</h2>
         <ul>
           <li>Python</li>
           <li>Django</li>
-          <li>HTML & CSS</li>
+          <li>HTML &amp; CSS</li>
           <li>JavaScript</li>
-          <li>Git & GitHub</li>
+          <li>Git &amp; GitHub</li>
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card" data-num="03">
         <h2>Contact</h2>
-        <p>Email: sujanlama@gmail.com</p>
-        <p>Location: Kathmandu, Nepal</p>
+        <p class="contact-row">
+          <strong>Email</strong>
+          <span>sujanlama@gmail.com</span>
+        </p>
+        <p class="contact-row">
+          <strong>Location</strong>
+          <span>Kathmandu, Nepal</span>
+        </p>
       </section>
     </main>
 
