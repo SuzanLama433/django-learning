@@ -8,3 +8,9 @@ def home(request):
 
 def form(request):
     return render(request,'form.html')
+
+def login(request):
+    return render(request,'login.html')
+
+def card(request):
+    return render(request,'cards.html')
