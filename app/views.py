@@ -14,3 +14,6 @@ def login(request):
 
 def card(request):
     return render(request,'cards.html')
+
+def calculator(request):
+    return render(request,'calculator.html')

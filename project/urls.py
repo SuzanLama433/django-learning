@@ -23,5 +23,6 @@ urlpatterns = [
     path('form/',views.form),
     path('login/',views.login),
     path('card/',views.card,name='card'),
+    path('cal/',views.calculator),
     
 ]

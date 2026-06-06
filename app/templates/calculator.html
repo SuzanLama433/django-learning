@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="{% static 'css/cal.css' %}">
+</head>
+<body>
+    <h1>simple calculater</h1>
+    <input type="number" id="num1" placeholder="Enter first Num">
+      <select name="op" id="operator" >
+        <option value="choose">choose operator</option>
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+    </select>
+
+    <input type="number" id="num2" placeholder="Enter second Num">
+  
+    <button onclick="add()">click me</button>
+    <h1 id="result1"></h1>
+   <script src="{% static 'js/cal.js' %}"></script> 
+</body>
+</html>
