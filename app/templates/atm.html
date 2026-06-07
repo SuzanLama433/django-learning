@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine - Prabhu Bank</title>
+    <link rel="stylesheet" href="{% static 'css/atm.css' %}">
+</head>
+<body>
+    <h1>Welcome to Prabhu Bank ATM</h1>
+    
+    <div class="atm-container">
+        <form onsubmit="atm(event)">
+            
+            <label>Enter Current PIN:</label>
+            <input type="password" id="pin" placeholder="Enter your 4-digit PIN" maxlength="4" required>
+
+            <label>Select Transaction:</label>
+            <select id="transaction">
+                <option value="balance">Check Balance</option>
+                <option value="withdraw">Withdraw Cash</option>
+                <option value="deposit">Deposit Cash</option>
+            </select>
+
+            <!-- Amount Field -->
+            <div id="amountField">
+                <label>Enter Amount (Rs.):</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+
+            <!-- Change PIN Section - Always Visible -->
+            <!-- <div class="change-pin-section">
+                <label>Change PIN (Optional)</label>
+                <input type="password" id="newPin" placeholder="Enter New 4-digit PIN" maxlength="4">
+                <input type="password" id="oldpasswor" placeholder="Old password" maxlength="4">
+            </div> -->
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset" onclick="resetForm()">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <h1 id="result"></h1>
+    <script src="{% static 'js/atm.js' %}"></script>
+</body>
+</html>

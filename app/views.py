@@ -17,3 +17,6 @@ def card(request):
 
 def calculator(request):
     return render(request,'calculator.html')
+
+def atm(request):
+    return render(request,'atm.html')
