@@ -24,6 +24,5 @@ urlpatterns = [
     path('login/',views.login),
     path('card/',views.card,name='card'),
     path('cal/',views.calculator),
-    path('atm/',views.atm),
-    
+    path('atm/',views.atm),    
 ]
