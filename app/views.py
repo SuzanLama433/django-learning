@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Product
+from .models import Product ,Card
 # Create your views here.
 #request: it is object that contain all the information comming from http response
 def home(request):
@@ -21,3 +21,7 @@ def calculator(request):
 
 def atm(request):
     return render(request,'atm.html')
+
+def cards(request): #for id card
+    data = Card.objects.all()
+    return render(request,'card.html',{'data':data})

@@ -27,4 +27,5 @@ urlpatterns = [
     path('card/',views.card,name='card'),
     path('cal/',views.calculator),
     path('atm/',views.atm),    
+    path('cards/',views.cards)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #it serve media file to frontend
