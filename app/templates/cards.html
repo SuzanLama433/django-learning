@@ -10,16 +10,17 @@
 <body>
     <div class="main">
         <!-- From Uiverse.io by andrew-demchenk0 -->
+        {% for i in data %}
         <div class="card">
             <div class="card-img">
-                <img src="{% static 'image/sujan.png' %}" height="100px" alt="not loading">
+                <img src="{{i.image.url}}" height="100px" alt="not loading">
             </div>
-            <div class="card-title">Winter Wear Jacket</div>
-            <div class="card-subtitle">Full Sleeves Zipper Closure Double Pocket Winter Wear Jacket For Mens Age Group: 18 Years Above 
+            <div class="card-title">{{i.title}}</div>
+            <div class="card-subtitle">{{i.desc}} 
             </div>
             <hr class="card-divider">
             <div class="card-footer">
-                <div class="card-price"><span>Rs</span> 50000</div>
+                <div class="card-price"><span>Rs</span> {{i.price}}</div>
                 <button class="card-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
@@ -38,6 +39,7 @@
                 </button>
             </div>
         </div>
+        {% endfor %}
     </div>
     <a style="text-decoration: none;" href="{% url 'home' %}"> <!-- From Uiverse.io by d4niz  -->
         <button class="contactButton">
