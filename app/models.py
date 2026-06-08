@@ -12,4 +12,4 @@ class Product(models.Model):
     
     
     #python3 manage.py makemigrations
-    #python3 manage.py 
+    #python3 manage.py migrate
