@@ -23,5 +23,8 @@ def atm(request):
     return render(request,'atm.html')
 
 def cards(request): #for id card
-    data = Card.objects.all()
+    data = Card.objects.all() #query set(featch all object from db)
     return render(request,'card.html',{'data':data})
+
+def portfolio(request):
+    return render(request,'portfolio.html')
